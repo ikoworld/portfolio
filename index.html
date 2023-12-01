@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website-frontend developper</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fd4dc3b006.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a id="white-link"  href="#">Services</a></li>
+            <li><a id="white-link"  href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="sub-container">
+        <img src="images/MY PIC.png" alt="my picture" class="pic">
+      <div class="header-text">
+        <p>Frontend developper</p>
+        <h1>H i , I 'm <span>Bouchra</span> <br> Aboura From Algeria</h1>
+      </div>
+    </div>
+    </div>
+   </div>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                 <p>As an enthusiastic frontend developer with a strong desire for
+                    continuous learning, I have recently completed my training at Recoded
+                    boot camp. During this program, I gained practical expertise in HTML,
+                    CSS, JavaScript, and React, honing my skills in crafting interactive and
+                    aesthetically pleasing websites. My approach is characterized by a keen
+                    eye for detail, a collaborative mindset, and an unwavering commitment
+                    to delivering top-notch web development solutions.</p>
+             
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Strength</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Html & Css</span> <br> building websites for your buisness</li>
+                            <li><span>javascript</span> <br> building websites for your buisness</li>
+                            <li><span>Next js</span> <br> building websites for your buisness</li>
+                            <li><span>Github</span> <br> building websites for your buisness</li>
+                            <li><span>Git</span> <br> building websites for your buisness</li>
+                            <li><span>Tailwind css</span> <br> building websites for your buisness</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>buisness
+                            <li>Problem-solving </li>
+                            <li>Attention to detail</li>
+                            <li>Time management</li>
+                            <li>Strong communication and collaboration skills</li>
+                            <li>Ability to work well under pressure</li>
+                            <li>Analytical thinking</li>
+                                <li>Self-motivation</li>
+                                    <li>Continuous learning</li>
+                    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>09/2016 - 09/2022</span> <br>
+                                dentist medical school</li>
+                            <li><span>22/07/2023</span> <br>Re:coded bootcamp</li>
+                         
+                        </ul>
+                    </div>
+            </div>
+         
+        </div>
+    </div>
+   </div>
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>hjbkcquuiaezf fziuzeufcze hhqdcujzenc cuhzuvhczsc cquiciuzdc czijicfz cdjcidjhzc hcudhsuc</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>web design</h2>
+                <p>hjbkcquuiaezf fziuzeufcze hhqdcujzenc cuhzuvhczsc cquiciuzdc czijicfz cdjcidjhzc hcudhsuc</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>web design</h2>
+                <p>hjbkcquuiaezf fziuzeufcze hhqdcujzenc cuhzuvhczsc cquiciuzdc czijicfz cdjcidjhzc hcudhsuc</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/code-removebg-preview.png" alt="">
+             <div class="layer">
+                <h3>Madlibs game</h3>
+                <p>the website is an online game that give you a platform where you can fill the blanks of a story in this project i choose jumanji which is a famous story with animation that takes you inside the game exactly as seen in the movie</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="images/code-removebg-preview.png" alt="">
+                <div class="layer">
+                    <h3>Ecommerce project</h3>
+                    <p>the website is an online game that give you a platform where you can fill the blanks of a story in this project i choose jumanji which is a famous story with animation that takes you inside the game exactly as seen in the movie</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/code-removebg-preview.png" alt="">
+                <div class="layer">
+                    <h3>Movies project</h3>
+                    <p>the website is an online game that give you a platform where you can fill the blanks of a story in this project i choose jumanji which is a famous story with animation that takes you inside the game exactly as seen in the movie</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> bouchrabichou638@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>phone number</p>
+                <div class="social-icons">
+                    <a><i class="fa-brands fa-facebook"></i></a> 
+                    <a><i class="fa-brands fa-linkedin"></i></a> 
+                    <a><i class="fa-brands fa-github"></i></a> 
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#9400 <strong>Bouchra.</strong>Made with <i class="fa-solid fa-heart"></i> by Me
+        </p>
+    </div>
+</div>
+   <script>
+    const tablinks=document.getElementsByClassName("tab-links");
+    const tabcontents=document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add('active-tab');
+   }
+   
+   
+   
+   
+   </script>
+   <script>
+  const sidemenu = document.querySelector(".sidemenu");
+
+function openmenu() {
+    sidemenu.style.right = "0";
+}
+
+function closemenu() {
+    sidemenu.style.right = "-200px";
+}
+
+   </script>
+</body>
+</html>
