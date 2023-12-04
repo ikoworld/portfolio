@@ -155,10 +155,10 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
+                <form onsubmit="submit(e)" action="https://formspree.io/f/mnqkkewg" method="POST">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <textarea name="message" placeholder="Your Message" rows="6"></textarea>
+                    <input id="email" type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
             </div>
@@ -201,15 +201,12 @@ function closemenu() {
 
    </script>
    <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyd5FaHWgaU_04gtDLiH96TvaTUPG5KZ7DHQEVoIq4-iN3eBRyB17Z-asJn_G3EmCnmUQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    function submit(e){
+        e.preventDefault(); // Corrected: Prevent default form submission
+        e.target.reset(); 
+
+    }
+   </script>
+
 </body>
 </html>
