@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif ;
+    font-family: 'Manrope', sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -109,10 +109,12 @@ flex-basis: 35%;
     flex-basis: 60%;
     }
 .sub-title{
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 40px;
     color:rgb(77, 75, 75);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 15px;
 }
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -163,11 +165,11 @@ position: relative;
     margin-top: 50px;
 }
 .services-list div{
-color: white;
-background: rgb(122, 30, 208);
+color: black;
+background: rgba(176, 129, 221, 0.5);
 padding: 40px;
-font-size:13px ;
-font-weight: 300;
+font-size:16px ;
+font-weight: 400;
 border-radius: 15px;
 transition: background 0.5s , transform 0.5s;
 
@@ -184,6 +186,7 @@ transition: background 0.5s , transform 0.5s;
 }
 .services-list div:hover{
 background: rgb(141, 50, 186);
+color: white;
 transform: translateY(-10px);
 }
 /* --------------portfolio-------------------- */
@@ -192,7 +195,8 @@ transform: translateY(-10px);
 }
 .work-list{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    height: 250px;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -204,6 +208,7 @@ transform: translateY(-10px);
 .work img{
     border-radius: 10px;
     width: 100%;
+    height: 100%;
     display: block;
     transition: transform 0.5s;
 }
@@ -268,13 +273,16 @@ transform: translateY(-10px);
 }
 /*----------------contact-----------*/
 #contact{
-    background-color: rgb(187, 173, 240)
+    background-color: rgb(187, 173, 240);
+    padding: 40px  0px;
+    margin-bottom: 0;
 }
 .contact-left{
     flex-basis: 35%;
 }
 .contact-right{
     flex-basis: 60%;
+    position: relative;
 }
 .contact-left p{
     margin-top: 30px;
@@ -332,8 +340,8 @@ cursor: pointer;
     padding: 25px;
     background-color: rgb(54, 6, 99);
     font-weight: 200;
-    margin-top: 20px;
     color: white;
+    font-family: 'Inconsolata', monospace;
 }
 .copyright i{
   color:orange
@@ -370,7 +378,7 @@ cursor: pointer;
             color: white;
         }
  }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:640px){
     #header{
         background-size:fit-content;
         background-repeat: no-repeat;
@@ -456,5 +464,18 @@ flex-basis: 100%;
     font-size: 14px;
 }
 }
-
-
+.msg{
+    display: inline-block;
+   
+    color: white;
+    font-size: small;
+    background-color: rgb(80, 156, 80);
+    opacity: 5%;
+    padding: 2%;
+    border-radius: 25px;
+    transition: opacity 8s;
+    margin-left: 5%;
+}
+#submit{
+    margin-bottom:10px ;
+}
