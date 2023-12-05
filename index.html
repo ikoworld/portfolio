@@ -4,7 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personal portfolio website-frontend developper</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Outfit:wght@200;400&family=Quicksand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Manrope&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fd4dc3b006.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+      <script type="text/javascript">
+   (function(){
+      emailjs.init("svsrH9iS6DAg9oN8I");
+   })();
+      </script>
+      <script src="script.js"></script>
 </head>
 <body>
    <div id="header">
@@ -22,9 +40,9 @@
       </nav>
       <div class="sub-container">
         <img src="images/MY PIC.png" alt="my picture" class="pic">
-      <div class="header-text">
-        <p>Frontend developper</p>
-        <h1>H i , I 'm <span>Bouchra</span> <br> Aboura From Algeria</h1>
+      <div class="header-text" >
+        <p style=" font-family: 'Josefin Sans', sans-serif;">Frontend developper</p>
+        <h1 >H i , I 'm <span>Bouchra</span> <br> Aboura From Algeria</h1>
       </div>
     </div>
     </div>
@@ -92,18 +110,18 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>web design</h2>
-                <p>hjbkcquuiaezf fziuzeufcze hhqdcujzenc cuhzuvhczsc cquiciuzdc czijicfz cdjcidjhzc hcudhsuc</p>
+                <h2>Website Development</h2>
+                <p> Building responsive and user-friendly websites using HTML, CSS, and JavaScript. This involves creating visually appealing and functional layouts that work across different devices and browsers</p>
             </div>
             <div>
                 <i class="fa-solid fa-crop"></i>
-                <h2>web design</h2>
-                <p>hjbkcquuiaezf fziuzeufcze hhqdcujzenc cuhzuvhczsc cquiciuzdc czijicfz cdjcidjhzc hcudhsuc</p>
+                <h2>Web Application Development</h2>
+                <p> Developing interactive web applications using frameworks like React, Angular, or Vue.js. These applications can offer dynamic features and enhanced user experiences</p>
             </div>
             <div>
                 <i class="fa-brands fa-app-store-ios"></i>
-                <h2>web design</h2>
-                <p>hjbkcquuiaezf fziuzeufcze hhqdcujzenc cuhzuvhczsc cquiciuzdc czijicfz cdjcidjhzc hcudhsuc</p>
+                <h2>Responsive Design</h2>
+                <p>Ensuring websites and applications function well on various devices (desktops, tablets, mobiles) by implementing responsive design techniques.</p>
             </div>
         </div>
     </div>
@@ -113,7 +131,7 @@
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/code-removebg-preview.png" alt="">
+                <img src="images/madlibs.png" alt="">
              <div class="layer">
                 <h3>Madlibs game</h3>
                 <p>the website is an online game that give you a platform where you can fill the blanks of a story in this project i choose jumanji which is a famous story with animation that takes you inside the game exactly as seen in the movie</p>
@@ -121,7 +139,7 @@
             </div>
             </div>
             <div class="work">
-                <img src="images/code-removebg-preview.png" alt="">
+                <img src="images/ecommerce.png" alt="">
                 <div class="layer">
                     <h3>Ecommerce project</h3>
                     <p>the website is an online game that give you a platform where you can fill the blanks of a story in this project i choose jumanji which is a famous story with animation that takes you inside the game exactly as seen in the movie</p>
@@ -129,7 +147,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="images/code-removebg-preview.png" alt="">
+                <img src="images/movie.png" alt="">
                 <div class="layer">
                     <h3>Movies project</h3>
                     <p>the website is an online game that give you a platform where you can fill the blanks of a story in this project i choose jumanji which is a famous story with animation that takes you inside the game exactly as seen in the movie</p>
@@ -138,14 +156,15 @@
 
             </div>
         </div>
-        <a href="#" class="btn"> See more</a>
+        <a href="https://github.com/ikoworld?tab=repositories" class="btn"> See more</a>
     </div>
 </div>
 <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title" style="text-align: center;"> Wanna collaborate ! </h1>
+                <span style="padding: 10px;font-size: 30px;font-weight: 900; font-family: 'Josefin Sans', sans-serif;color: rgb(161, 10, 136);display: block;text-align: center;"> Contact Me</span>
                 <p><i class="fa-regular fa-paper-plane"></i> bouchrabichou638@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i>phone number</p>
                 <div class="social-icons">
@@ -155,19 +174,21 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form onsubmit="submit(e)" action="https://formspree.io/f/mnqkkewg" method="POST">
-                    <input type="text" name="Name" placeholder="Your Name" required>
+                <form id="form">
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
                     <input id="email" type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <textarea id="message" name="Message" placeholder="Your Message" rows="6"></textarea>
+                    <button id="submit" onclick="sendMail(event)" type="submit" class="btn btn2">Submit</button> <span id="msg"></span>
                 </form>
+                
             </div>
         </div>
     </div>
-    <div class="copyright">
-        <p>Copyright &#9400 <strong>Bouchra.</strong>Made with <i class="fa-solid fa-heart"></i> by Me
-        </p>
-    </div>
+    
+</div>
+<div class="copyright">
+    <p>Copyright &#9400 <strong>Bouchra.</strong>Made with <i class="fa-solid fa-heart"></i> by Me
+    </p>
 </div>
    <script>
     const tablinks=document.getElementsByClassName("tab-links");
@@ -200,13 +221,7 @@ function closemenu() {
 }
 
    </script>
-   <script>
-    function submit(e){
-        e.preventDefault(); // Corrected: Prevent default form submission
-        e.target.reset(); 
-
-    }
-   </script>
+  
 
 </body>
 </html>
