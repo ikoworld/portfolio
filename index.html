@@ -19,31 +19,31 @@
       <script src="script.js"></script>
 </head>
 <body>
-   <div id="header">
-    <div class="container">
-       
-      <nav>
-
-        <ul id="sidemenu">
-           
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a id="white-link"  href="#services">Services</a></li>
-            <li><a id="white-link"  href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="sub-container">
-        <img src="images/Design sans titre.gif" alt=""  class="pic">
-      <div class="header-text" >
-        <p style=" font-family: 'Josefin Sans', sans-serif;">Frontend developper</p>
-        <h1 >H i , I 'm <span>Bouchra</span>  Aboura From Algeria</h1>
-      </div>
+    <div id="header">
+        <div class="container">
+            <div id="menubtn-container"> <i id="menuButton" class="fa-solid fa-bars" onclick="toggleSideMenu()"></i></div>
+            <nav>
+                
+                <ul id="sideMenu" class="show">
+                    <div> <i id="closeButton" class="fa-solid fa-xmark" onclick="toggleSideMenu()"></i></div>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a id="white-link" href="#services">Services</a></li>
+                    <li><a id="white-link" href="#contact">Contact</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <div class="sub-container">
+                <img src="images/Design sans titre.gif" alt="" class="pic">
+                <div class="header-text">
+                    <p style="font-family: 'Josefin Sans', sans-serif;">Frontend developer</p>
+                    <h1>H i , I 'm <span>Bouchra</span> Aboura From Algeria</h1>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-   </div>
    <div id="about">
     <div class="container">
         <div class="row">
@@ -208,18 +208,22 @@
    
    
    </script>
-   <script>
-  const sidemenu = document.getElementById("sidemenu");
+<script>
+function toggleSideMenu() {
+  var sideMenu = document.getElementById("sideMenu");
+  if (sideMenu.classList.contains("show")) {
+    sideMenu.style.right = "-200px"; // Hide the menu by setting the right property
+    sideMenu.classList.remove("show");
+    menuButton.style.display = "inline-block"; 
+  } else {
+    sideMenu.style.right = "0"; // Display the menu by setting the right property to 0
+    sideMenu.classList.add("show");
+    menuButton.style.display = "none"; 
 
-function openmenu() {
-    sidemenu.style.right = "0";
+  }
 }
 
-function closemenu() {
-    sidemenu.style.right = "-200px";
-}
-
-   </script>
+</script>
   
 
 </body>
