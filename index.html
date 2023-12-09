@@ -69,33 +69,40 @@
                         <p class="tab-links " onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Html & Css</span> <br> building websites for your buisness</li>
-                            <li><span>javascript</span> <br> building websites for your buisness</li>
-                            <li><span>Next js</span> <br> building websites for your buisness</li>
-                            <li><span>Github</span> <br> building websites for your buisness</li>
-                            <li><span>Git</span> <br> building websites for your buisness</li>
-                            <li><span>Tailwind css</span> <br> building websites for your buisness</li>
+                        <ul><li><span>Technologies:</span> </li>
+                           <p>Html & Css 
+                            javascript
+                            Github 
+                            Git</p> 
+                        </ul> <ul> <li><span>Frameworks:</span></li>
+                           <p> Next js 
+                            REACT
+                            MUI 
+                            Tailwind css </p>
                         </ul>
                     </div>
                     <div class="tab-contents " id="experience">
-                        <ul>buisness
-                            <li>Problem-solving </li>
+                        <ul>
                             <li>Attention to detail</li>
                             <li>Time management</li>
                             <li>Strong communication and collaboration skills</li>
                             <li>Ability to work well under pressure</li>
-                            <li>Analytical thinking</li>
-                                <li>Self-motivation</li>
-                                    <li>Continuous learning</li>
+                            <li>Continuous learning</li>
                     
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>09/2016 - 09/2022</span> <br>
-                                dentist medical school</li>
+                                Dentist_medical departement of salah boubnider university-Constantine</li>
+                                <p>I diligently pursued my studies in dentistry, achieving excellent grades and maintaining a positive demeanor among my colleagues and teachers. Through my academic journey, I cultivated a strong sense of responsibility, diligence, and an acute attention to detail.</p>
                             <li><span>22/07/2023</span> <br>Re:coded bootcamp</li>
+                            <p>Re:Coded Immersive bootcamps are highly competitive, with a 5% acceptance
+                                rate.<br>
+                                Completing a 4.5-month immersive web development bootcamp, with 300+
+                                hours of curricula and project-based learning Technologies: HTML, CSS,
+                                JavaScript, React Working with various development teams to create products
+                                across industries.</p>
                          
                         </ul>
                     </div>
@@ -210,7 +217,8 @@
    </script>
 <script>
 function toggleSideMenu() {
-  var sideMenu = document.getElementById("sideMenu");
+  const sideMenu = document.getElementById("sideMenu");
+  const menuButton=document.getElementById("menuButton");
   if (sideMenu.classList.contains("show")) {
     sideMenu.style.right = "-200px"; // Hide the menu by setting the right property
     sideMenu.classList.remove("show");
